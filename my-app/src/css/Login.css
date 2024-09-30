@@ -1,0 +1,86 @@
+
+/* Main container for the login form */
+.login-container {
+    max-width: 400px; /* Limit the width of the form */
+    margin: 100px auto; /* Center the form vertically and horizontally */
+    padding: 20px;
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Header styling */
+.login-container h2 {
+    text-align: center; /* Center the heading */
+    color: #333; /* Darker text for contrast */
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px; /* Space between form fields */
+}
+
+/* Label styling */
+.form-group label {
+    display: block; /* Display labels as block elements */
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold; /* Bold labels */
+    color: #555; /* Slightly lighter color for labels */
+}
+
+/* Input field styling */
+.form-group input {
+    width: 100%; /* Full width for input fields */
+    padding: 10px; /* Padding inside input fields */
+    border: 1px solid #ccc; /* Light border color */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    transition: border 0.3s; /* Smooth transition for border color */
+}
+
+/* Input focus state */
+.form-group input:focus {
+    border-color: #007BFF; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Submit button styling */
+.submit-login {
+    width: 100%; /* Full width for the button */
+    padding: 10px; /* Padding inside the button */
+    background-color: #007BFF; /* Primary button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Button hover effect */
+.submit-login:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Error message styling */
+.error-message {
+    color: #e74c3c; /* Red color for error messages */
+    text-align: center; /* Center the error message */
+    margin-top: 10px; /* Space above the error message */
+}
+
+/* Link styling */
+.login-container p {
+    text-align: center; /* Center the text */
+}
+
+.login-container a {
+    color: #007BFF; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for link color */
+}
+
+/* Link hover effect */
+.login-container a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}

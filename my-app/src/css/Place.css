@@ -1,0 +1,131 @@
+.places-wrapper {
+    padding: 20px; /* Add padding around the main container */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.places-title {
+    font-size: 2rem; /* Title font size */
+    margin-bottom: 20px; /* Space below the title */
+    text-align: center; /* Center the title */
+    color: #2c3e50; /* Darker text color */
+    font-weight: bold; /* Bold title for emphasis */
+}
+
+.places-grid {
+    display: grid; /* Use grid layout for the places */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between grid items */
+}
+
+.place-card-item {
+    border: 1px solid #ddd; /* Light border for cards */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fff; /* White background for cards */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 15px; /* Padding inside cards */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
+}
+
+.place-card-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.place-card-title {
+    font-size: 1.5rem; /* Title font size */
+    margin: 10px 0; /* Space around title */
+    color: #34495e; /* Darker color for title */
+}
+
+.place-card-description {
+    font-size: 1rem; /* Description font size */
+    margin: 5px 0; /* Space around description */
+    color: #555; /* Gray color for description */
+}
+
+.place-card-location {
+    font-size: 0.9rem; /* Location font size */
+    color: #777; /* Lighter gray for location text */
+    margin-bottom: 10px; /* Space below location text */
+}
+
+.place-card-photos {
+    margin: 10px 0; /* Space above and below photos */
+    display: flex; /* Flex layout for photos */
+    justify-content: center; /* Center align photos */
+}
+
+.place-photo {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Rounded corners for photos */
+    object-fit: cover; /* Cover the area without distortion */
+    max-height: 150px; /* Maximum height for images */
+    margin-bottom: 10px; /* Space below each image */
+}
+
+.error-message {
+    color: red; /* Red color for error messages */
+    font-weight: bold; /* Bold text for visibility */
+    margin: 10px 0; /* Space around error messages */
+    text-align: center; /* Center the error message */
+}
+
+.success-message {
+    color: green; /* Green color for success messages */
+    font-weight: bold; /* Bold text for visibility */
+    margin: 10px 0; /* Space around success messages */
+    text-align: center; /* Center the success message */
+}
+
+.place-card-buttons {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 15px; /* Space between buttons */
+    margin-top: 10px; /* Space above buttons */
+}
+
+.button-add, .button-info {
+    padding: 10px 15px; /* Padding inside buttons */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth background change */
+}
+
+.button-add {
+    background-color: #28a745; /* Color for add button */
+    color: white; /* Text color for add button */
+}
+
+.button-info {
+    background-color: #007BFF; /* Color for info button */
+    color: white; /* Text color for info button */
+    text-decoration: none; /* Remove underline for links */
+    text-align: center; /* Center text in the button */
+}
+
+.button-add:hover {
+    background-color: #218838; /* Darken on hover */
+    transform: translateY(-2px); /* Lift on hover */
+}
+
+.button-info:hover {
+    background-color: #0056b3; /* Darken on hover */
+    transform: translateY(-2px); /* Lift on hover */
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .places-title {
+        font-size: 1.5rem; /* Smaller title on mobile */
+    }
+
+    .place-card-item {
+        padding: 10px; /* Smaller padding on mobile */
+    }
+
+    .place-card-title {
+        font-size: 1.25rem; /* Smaller title on mobile */
+    }
+}

@@ -1,0 +1,27 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #729762; /* Change this to your preferred background color */
+  color: #ffffff; /* Text color */
+}
+
+.navbar-left h2 {
+  margin: 0;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 20px; /* Space between items */
+}
+
+.navbar-item {
+  color: #ffffff; /* Text color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold;
+}
+
+.navbar-item:hover {
+  text-decoration: underline; /* Underline on hover */
+}

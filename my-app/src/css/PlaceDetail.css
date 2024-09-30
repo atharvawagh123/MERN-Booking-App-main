@@ -1,0 +1,200 @@
+/* PlaceDetail.css */
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --text-color: #333;
+  --background-color: #f5f5f5;
+  --card-background: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+.pd-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Arial', sans-serif;
+}
+
+.pd-back-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.pd-back-btn:hover {
+  background-color: darken(var(--primary-color), 10%);
+}
+
+.pd-content {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.pd-photo-container {
+  flex: 1;
+  max-width: 50%;
+}
+
+.pd-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.pd-no-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+.pd-info {
+  flex: 1;
+  max-width: 50%;
+}
+
+.pd-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.pd-description,
+.pd-location,
+.pd-perks,
+.pd-extra-info,
+.pd-checkin-checkout,
+.pd-max-guests,
+.pd-price {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.pd-add-btn {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.pd-add-btn:hover {
+  background-color: darken(var(--secondary-color), 10%);
+}
+
+.pd-success {
+  color: var(--secondary-color);
+  margin-top: 1rem;
+}
+
+.pd-error {
+  color: #e74c3c;
+  margin-top: 1rem;
+}
+
+.pd-suggested {
+  margin-top: 3rem;
+}
+
+.pd-suggested-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.pd-suggested-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.pd-suggested-card {
+  background-color: var(--card-background);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  transition: transform 0.3s ease;
+}
+
+.pd-suggested-card:hover {
+  transform: translateY(-5px);
+}
+
+.pd-suggested-photo {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.pd-suggested-name {
+  font-size: 1.2rem;
+  margin: 1rem;
+  color: var(--primary-color);
+}
+
+.pd-suggested-description {
+  margin: 0 1rem 1rem;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.pd-suggested-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  width: calc(100% - 2rem);
+  margin: 1rem;
+}
+
+.pd-suggested-btn:hover {
+  background-color: darken(var(--primary-color), 10%);
+}
+
+.pd-loading,
+.pd-error,
+.pd-not-found {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .pd-content {
+    flex-direction: column;
+  }
+
+  .pd-photo-container,
+  .pd-info {
+    max-width: 100%;
+  }
+
+  .pd-photo-container {
+    height: 300px;
+  }
+
+  .pd-suggested-grid {
+    grid-template-columns: 1fr;
+  }
+}
